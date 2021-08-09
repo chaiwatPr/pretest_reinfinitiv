@@ -1,0 +1,18 @@
+
+<body>
+  <form [formGroup]="appForm" >
+    <div class="warpper">
+      <div class="col1">
+        <input  type="number" formControlName="number" (input)="calculate()">
+      </div>
+      <div class="col2">
+        <select id="selectCal" class="select" formControlName="typeCalulate" (change)="calculate()">
+          <option value="1" >isPrime</option>
+          <option value="2" >isFibonacci</option>
+        </select>
+      </div>
+      <div class="col3">{{this.appForm.controls.resultFromCal.value}}</div>
+    </div>
+  </form>
+</body>
+

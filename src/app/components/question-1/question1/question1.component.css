@@ -1,0 +1,40 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.warpper{
+  display:grid;
+  grid-template-columns: 200px auto 300px;
+
+}
+.col1{
+  left: 0;
+  height: 100%;
+  border:1px solid black;
+
+}
+
+.col2{
+  height: 100%;
+  border:1px solid black;
+}
+
+.col3{
+  right:0;
+  min-height: 100vh;
+  border:1px solid black;
+
+}
+
+.select {
+  width:98px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: auto;
+}
